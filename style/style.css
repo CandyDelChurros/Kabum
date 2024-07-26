@@ -101,8 +101,6 @@ header .cabeca .right-cabeca .user {
 
 }
 
-
-
 header .cabeca .right-cabeca .user span {
     gap: .2rem;
     width: 15rem;
@@ -144,7 +142,251 @@ header .pop ul li {
 
 main {
     grid-area: main;
-    border: .1rem solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+main .produtos {
+    display: flex;
+    flex-direction: column;
+    height: 1fr;
+    width: 99%;
+    border: .1rem solid blue;
+    background-color: #FAFAFB;
+}
+
+main .produtos .promo {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+main .produtos .promo .promo-top {
+    background-color: #F17A28;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 3rem;
+    align-items: center;
+    font-weight:900;
+    color: #fff;
+    font-size: 2rem;
+}
+
+main .produtos .itens {
+    display: flex;
+    padding-top:4rem ;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+main .produtos .itens .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .1rem solid #FAFAFB;
+    box-shadow: .3rem .3rem 1rem 0rem #e8e8eb;
+    border-radius: .5rem;
+    width: 21rem;
+    height: 43rem;
+}
+
+main .produtos .itens .produto .produto-top{
+    display: flex;
+    height: 4.5rem;
+    width: 19rem;
+    padding-top: 0.5rem;
+    gap: 1rem;
+
+}
+main .produtos .itens .produto .produto-top .desconto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #F17A28;
+    padding-top: .8rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-weight: 900;
+    width: 4rem;
+    height: 4rem;
+}
+
+main .produtos .itens .produto .produto-top .desconto span {
+    font-size: 1.3rem;
+    height: 0.8rem;   
+}
+main .produtos .itens .produto .produto-top .desconto i {
+    font-size: 2.1rem;
+}
+
+main .produtos .itens .produto .produto-top .estoque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: .1rem solid #F17A28;
+    border-radius: .3rem;
+    color: #F17A28;
+    font-weight: 900;
+    font-size: .8rem;
+    width: 4rem;
+    height: 4rem;
+}
+main .produtos .itens .produto .produto-top .estoque span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .produtos .itens .produto .produto-img {
+    margin-top: 2rem;
+    height: 13rem;
+    width: 21rem;
+}
+
+main .produtos .itens .produto:nth-child(1) .produto-img {
+    background: url(../Img/p1.jpg);
+    background-repeat: no-repeat;
+    background-size: 17.5rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+main .produtos .itens .produto:nth-child(2) .produto-img {
+    background: url(../Img/p2.jpg);
+    background-repeat: no-repeat;
+    background-size: 17.5rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+main .produtos .itens .produto:nth-child(3) .produto-img {
+    background: url(../Img/p3.jpg);
+    background-repeat: no-repeat;
+    background-size: 17.5rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+main .produtos .itens .produto:nth-child(4) .produto-img {
+    background: url(../Img/p4.jpg);
+    background-repeat: no-repeat;
+    background-size: 13rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+main .produtos .itens .produto:nth-child(5) .produto-img {
+    background: url(../Img/p5.jpg);
+    background-repeat: no-repeat;
+    background-size: 14.6rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+main .produtos .itens .produto .produto-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: #3a3c4e;
+}
+main .produtos .itens .produto .produto-mid .frete{
+    color: #1F9050;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+main .produtos .itens .produto .produto-mid .frete i{
+    margin-right: .5rem;
+    font-size: 1.05rem;
+}
+main .produtos .itens .produto .produto-mid .nome-produto{
+    width: 19rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .produtos .itens .produto .produto-mid .nome-produto span{
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+}
+
+main .produtos .itens .produto .produto-mid .preco span{
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+}
+
+main .produtos .itens .produto .produto-mid .preco span:nth-child(1){
+    text-decoration: line-through;
+}
+
+main .produtos .itens .produto .produto-mid .preco h2{
+    color: #FF6500;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+main .produtos .itens .produto .produto-bot {
+    border: .1rem solid #FF6500;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    height: 4rem;
+}
+main .produtos .itens .produto .produto-bot .raio{
+    background-color: #FF6500;
+    color: #FFF;
+    font-size: 2.2rem;
+    font-style: italic;
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .produtos .itens .produto .produto-bot .restante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF6500;
+    font-size: 1.2rem;
+    width: 15rem;
+}
+
+main .produtos .banner{
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+main .produtos .banner .ban {
+    height: 12rem;
+    width: 60rem;
+}
+
+main .produtos .banner .ban:nth-child(1) {
+    background: url(../Img/banner1.jpeg);
+    background-size: cover;
+}
+main .produtos .banner .ban:nth-child(2) {
+    background: url(../Img/banner2.jpeg);
+    background-size: cover;
+}
+
+main .produtos .marcas {
+    border: .1rem solid green;
+    
 }
 
 footer {

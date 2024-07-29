@@ -383,15 +383,99 @@ main .produtos .banner .ban:nth-child(2) {
     background: url(../Img/banner2.jpeg);
     background-size: cover;
 }
+main .produtos .marca-titulo {
+    padding-left: 8rem;   
+    padding-bottom: 2rem;   
+}
+main .produtos .marca-titulo i {
+    color: #E35214;
+}
 
-main .produtos .marcas {
-    border: .1rem solid green;
-    
+main .produtos .marca-titulo span {
+    font-weight: 800;
+    font-size: 2.1rem;
+    color: #42464D;
+    font-family: 'Poppins';
+}
+
+main .produtos .marcas{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .produtos .marcas .marca{ 
+    box-shadow: .3rem .3rem 1rem 0rem #e8e8eb;
+    width: 30rem;
+    height: 25rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .produtos .marcas .marca span {
+    font-family: 'Poppins';
+    color: #42464D;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+main .produtos .marcas .marca h3 {
+    font-family: 'Poppins';
+    color: #FF6500;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+main .produtos .marcas .marca .marca-img{
+    border-radius: .4rem;
+    width: 25rem;
+    height: 17rem;
+}
+
+main .produtos .marcas .marca:nth-child(1) .marca-img{
+    background: url(../Img/m1.jpeg);
+    background-size: 25rem 17rem;
+}
+main .produtos .marcas .marca:nth-child(2) .marca-img{
+    background: url(../Img/m2.jpeg);
+    background-size: 25rem 17rem;
+}
+main .produtos .marcas .marca:nth-child(3) .marca-img{
+    background: url(../Img/m3.png);
+    background-size: 25rem 17rem;
+}
+main .produtos .marcas .marca:nth-child(4) .marca-img{
+    background: url(../Img/m4.jpeg);
+    background-size: 25rem 17rem;
+}
+main .produtos .marcas .marca:nth-child(5) .marca-img{
+    background: url(../Img/m5.png);
+    background-size: 25rem 17rem;
+}
+main .produtos .marcas .marca:nth-child(6) .marca-img{
+    background: url(../Img/m6.jpeg);
+    background-size: 25rem 17rem;
+}
+main .produtos .marcas .marca:nth-child(7) .marca-img{
+    background: url(../Img/m7.jpeg);
+    background-size: 25rem 17rem;
+}
+main .produtos .marcas .marca:nth-child(8) .marca-img{
+    background: url(../Img/m8.jpeg);
+    background-size: 25rem 17rem;
 }
 
 footer {
     grid-area: footer;
-    border: .1rem solid blue;
+}
+
+footer .guia {
+    display: flex;
+    flex-direction: column;
 }
 
 

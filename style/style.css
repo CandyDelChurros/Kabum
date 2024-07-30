@@ -30,7 +30,7 @@ header {
 
 header .cabeca{
     background: #0060B1;
-    height: 10.3rem;
+    height: 10.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,15 +146,20 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: #00005B;
 }
 
+main .slide {
+    width: 99%;
+    height: 30rem;
+    background: url(../Img/s1.webp);
+    background-size: cover;
+}
 main .produtos {
     display: flex;
     flex-direction: column;
     height: 1fr;
     width: 99%;
-    border: .1rem solid blue;
     background-color: #FAFAFB;
 }
 
@@ -403,6 +408,7 @@ main .produtos .marcas{
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 main .produtos .marcas .marca{ 
     box-shadow: .3rem .3rem 1rem 0rem #e8e8eb;
@@ -471,11 +477,192 @@ main .produtos .marcas .marca:nth-child(8) .marca-img{
 
 footer {
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer .guia {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background: #004d8e;
+    gap: 2rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 70rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
+footer .guia span {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.3rem;
+}
 
+footer .guia .departamentos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+footer .guia .departamentos ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 28rem;
+    height: 56rem;
+}
+footer .guia .departamentos li{
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+footer .guia .novidades ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.7rem;
+}
+
+footer .guia .novidades li {
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+}
+
+footer .guia .institutional{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+footer .guia .institutional ul, .acessi ul, .atendimento ul {
+    display: flex;
+    width: 15rem;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.7rem;
+}
+
+footer .guia .institutional li, .acessi li, .atendimento li {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+}
+
+footer .guia .acessi{
+    font-size: 1.3rem;
+}
+
+footer .guia .acessi .conta, .midia, .baixe{
+    margin-top: 5rem;
+}
+
+footer .guia .baixe .botao {
+    border: .1rem solid black;
+    border-radius: 1rem;
+    background: #000;
+    display: flex;
+    width: 15rem;
+    margin-top: 1rem;
+}
+
+footer .guia .baixe .botao .icon-bot{
+    width: 4rem;
+    height: 4rem;
+}
+
+footer .guia .baixe .botao:nth-of-type(1) .icon-bot{
+    background: url(../Img/playstore.webp);
+    background-size: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer .guia .baixe .botao:nth-of-type(2) .icon-bot{
+    background: url(../Img/apple.png);
+    background-size: 2rem;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+footer .guia .baixe .botao .text{
+    font-size: 1rem;
+    padding-top: .5rem;
+}
+
+footer .guia .atendimento{
+    font-size: 1.3rem;
+}
+
+footer .certificados {
+    height: 15rem;
+    width: 100rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+footer .certificados .certi-img {
+    height: 7rem;
+    width: 19rem;
+}
+
+footer .certificados .certi-img:nth-child(1) {
+    background: url(../Img/ct1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .certificados .certi-img:nth-child(2) {
+    background: url(../Img/ct2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+footer .certificados .certi-img:nth-child(3) {
+    background: url(../Img/ct4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+footer .certificados .certi-img:nth-child(4) {
+    background: url(../Img/ct5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer .certificados .certi-img:nth-child(5) {
+    background: url(../Img/ct6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+footer .certificados .certi-img:nth-child(6) {
+    background: url(../Img/ct3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer .copy {
+    margin-top: 2rem;
+    background: #003A6A;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    padding-left: 8rem;
+    padding-right: 7rem;
+}
+
+footer .copy span {
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
